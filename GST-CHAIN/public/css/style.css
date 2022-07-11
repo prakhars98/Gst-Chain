@@ -1,0 +1,87 @@
+.footer{
+    background: rgb(0, 0, 0);
+    color:white;
+    
+    .links{
+      ul {list-style-type: none;}
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  }
+  
+  .nav-link{
+      font-weight: bolder;
+      color: whitesmoke;
+    
+  }
+
+  .navbar{
+
+    background-color: #000000;
+}
+
+.navbar-brand{
+  color: whitesmoke;
+  
+}
+.navbar-brand:hover{
+  color: whitesmoke;
+  
+}
+
+.footer{
+  background-color: #000000;}
+
+.footer-links{
+  color: whitesmoke;
+}
+
+.card-header{
+  background-color: #000000;
+}
+.card-footer{
+  background-color: #000000;
+}
+.main-container{
+  background-color: black;
+  position: relative;
+}
+.container{
+  position: relative;
+}
+.nav-link:hover{
+cursor: pointer;
+color: whitesmoke;
+background-color: grey;
+
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.card-dashboard{
+  margin-top: 50px;
+  color:	#F0F8FF;
+  font-family: Helvetica;
+  background-color: #000000;
+}

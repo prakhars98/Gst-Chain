@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-sm sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/dashboard">GST Chain</a>
+    <ul class="navbar-nav">
+    <li class="nav-item"><a href="/dashboard" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href=""class="nav-link">About</a></li>
+    <li class="nav-item"><a href="/logout"class="nav-link">Logout</a></li>
+</ul>
+</div>
+</nav>
+<div class="card text-left mx-auto shadow-lg rounded" style="max-width: 80%; margin-top: 50px">
+    <div class="card-header text-white text-center">
+      Generate Invoice
+    </div>
+    <%- include('./partials/messages'); %>
+    <form action="/dashboard/genInvoice" id="invoice-form" method="POST">
+    <div class="card-body">
+        
+            <div class="mx-auto" style="width: 80%">
+                <div class="form-group">
+                <label for="GSTN">Invoice Number</label>
+                <input type="number" class="form-control" id="invoice" aria-describedby="emailHelp" name="invoice" value="<%= invoiceNo%>" placeholder="Enter Invoice Number" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" class="form-control" id="date" name="date" aria-describedby="emailHelp" value="<%= currentDate%>" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="productName">Enter Product Name</label>
+                        <input type="text" class="form-control" id="productName" name="productName" aria-describedby="emailHelp" placeholder="Enter Product Name">
+                        </div>
+                    <div class="form-group">
+                    <label for="prodQuantity">Enter Product Quantity</label>
+                    <input type="number" class="form-control" id="prodQuantity" name="prodQuantity" aria-describedby="emailHelp" placeholder="Enter Product Quantity">
+                    </div>
+                <div class="form-group">
+                <label for="unitPrice">Enter price per unit</label>
+                <input type="number" class="form-control" id="unitPrice" name="unitPrice" placeholder="Enter Price per unit">
+                </div>
+                <div class="form-group">
+                    <label for="gst">Enter GST %</label>
+                    <input type="number" class="form-control" id="gst" name="gst" placeholder="Enter GST %">
+                    </div>                
+                </div>  
+            </div>
+            <div class="card-footer text-white text-center">
+              <button type="submit" class="btn btn-dark" id="invoice-btn">Generate Invoice</button>
+              
+            </div>
+          </form>
+            
+               
+    </div>
+ <script src="/js/web3.js"></script>
+ <script src="/js/ganacheConnection.js"></script>
+ <script>
+  window.addEventListener('load', async()=>{
+    init();
+  })
+  
+</script>

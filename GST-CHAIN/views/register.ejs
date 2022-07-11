@@ -1,0 +1,118 @@
+<nav class="navbar navbar-expand-sm sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/">GST Chain</a>
+    <ul class="navbar-nav">
+    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href=""class="nav-link">About</a></li>
+    <li class="nav-item"><a href="/login"class="nav-link">Login</a></li>
+    <li class="nav-item"><a href="/register"class="nav-link">Register</a></li>
+    </ul>
+    </div>
+</nav>
+
+<div class="card text-left mx-auto shadow-lg rounded" style="max-width: 80%; margin-top: 50px">
+        <div class="card-header text-white text-center">
+          New Registration
+        </div>
+        <%- include('./partials/messages'); %>
+        <form action="/register" method="POST">
+        <div class="card-body">
+            
+                <div class="mx-auto" style="width: 80%">
+                    <div class="form-group">
+                    <label for="GSTN">GSTN</label>
+                    <input type="text" class="form-control" id="GSTN" aria-describedby="emailHelp" name="GSTN" placeholder="Enter GSTN">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput">Create Password</label>
+                        <input type="password" class="form-control" id="passwordInput" name="password" aria-describedby="emailHelp" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" aria-describedby="emailHelp" placeholder="Confirm Password">
+                            </div>
+                        <div class="form-group">
+                        <label for="businessName">Legal Name of the Business (As Mentioned in PAN)</label>
+                        <input type="text" class="form-control" id="businessName" name="businessName" aria-describedby="emailHelp" placeholder="Enter Legal Name of Business">
+                        </div>
+                    <div class="form-group">
+                    <label for="pan">Permanent Account Number (PAN)</label>
+                    <input type="text" class="form-control" id="pan" name="PAN" placeholder="Enter Permanent Account Number (PAN)">
+                    </div>
+                    <div class="form-group">
+                            <label for="state">State/UT</label>
+                            <select class="form-control" id="state" name="StateName"> 
+                              <option selected>Select</option>
+                              <option>Uttar Pradesh</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                            <label for="district">District</label>
+                            <select class="form-control" id="district" name="DistrictName">
+                                    <option selected>Select</option>
+                                <option>Ghaziabad</option>
+                                <option>Kanpur</option>
+                                <option>Lucknow</option>
+                                <option>Meerut</option>
+                                <option>Prayagraj</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailId">Email Address</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        </div>    
+                            <input id="emailId" type="text" class="form-control" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-mobile"></i></span>
+                        </div>    
+                            <input id="mobile" type="number" class="form-control" name="mobileNo" placeholder="Enter Mobile Number" maxlength="10">
+
+                        </div>
+                            </div>
+                    </div>  
+                </div>
+                <div class="card-footer text-white text-center">
+                    <button type="submit" class="btn btn-dark">PROCEED</button>
+                  </div>
+                    </form>
+            
+        </div>
+        <div class="mt-5 pt-5 footer ">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                  <h3>Follow us on</h3>
+                  <a href=""><img src="/icons/twitter-icon.png" alt="" style="width: 32px; height: 32px;"></a>
+                  <a href=""><img src="/icons/insta-icon.png" alt="" style="width: 32 px; height: 32px;"></a>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                  <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                    <ul class="m-0 p-0">
+                      <li><a href="#" class="footer-links">Contact Us</a></li>
+                      <li><a href="#" class="footer-links">Help</a></li>
+                      <li><a href="#" class="footer-links">Related Sites</a></li>
+                      <li><a href="#" class="footer-links">About GST</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                  <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                  <p>Campus-1, 19th KM Stone, NH-24, Ghaziabad, UP 201009</p>
+                  <p class="mb-0">(541) 754-3010</p>
+                  <p>abes.ac.in</p>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col copyright">
+                  <p class=""><small class="text-white-50">© 2020. All Rights Reserved.</small></p>
+                </div>
+              </div>
+            </div>
+            </div>
+            

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/dashboard">GST Chain</a>
+    <ul class="navbar-nav">
+    <li class="nav-item"><a href="/dashboard" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href=""class="nav-link">About</a></li>
+    <li class="nav-item"><a href="/logout"class="nav-link">Logout</a></li>
+</ul>
+</div>
+</nav>
+<div class="card text-left mx-auto shadow-lg rounded" style="width: 80%; margin-top: 50px">
+    <div class="card-header text-white text-center">
+      Search Invoice
+    </div>
+    <%- include('./partials/messages'); %>
+    <form action="/dashboard/searchInvoice/searchInvoiceNo" method="GET">
+    <div class="card-body">
+        
+            <div class="mx-auto" style="width: 80%">
+                <div class="form-group">
+                    <label for="searchInvoiceNo">Enter Invoice No</label>
+                    <input type="number" class="form-control" id="searchInvoiceNo" name="searchInvoiceNo" aria-describedby="emailHelp" placeholder="Enter Invoice No">
+                </div>
+            </div>  
+    </div>
+            <div class="card-footer text-white text-center">
+                <button type="submit" class="btn btn-dark">PROCEED</button>
+            </div>
+    </form>
+</div>
