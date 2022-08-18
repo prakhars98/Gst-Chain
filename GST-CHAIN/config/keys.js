@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI :'your mongo URI displayed on the mongodb atlas platform'
+     MongoURI :'mongodb+srv://prakhar:prakhar@1998@gst-db-hvngq.mongodb.net/GST-DB?retryWrites=true&w=majority'
 }
