@@ -39,4 +39,4 @@ app.use('/dashboard/getInvoice', require('./controller/controller'));
 app.use('/dashboard/payGST', require('./controller/controller'));
 app.use('/dashboard/viewInvoice', require('./controller/controller'));
 const PORT = process.env.PORT || 3000 ;
-app.listen(3000, console.log(`The server is running on port ${PORT}`))
+app.listen(PORT, console.log(`The server is running on port ${PORT}`))
