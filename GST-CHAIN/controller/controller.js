@@ -73,8 +73,8 @@ router.post('/register',(req, res)=>{
 router.get('/register',(req, res)=>{res.render('register')});
 router.get('/reset',(req, res)=>res.render('reset'));
 router.post('/reset', (req,res)=>{
-    const email = req.body.email;
-    User.findOne({email:email}).then(user=>{
+    const gstn = req.body.gstn;
+    User.findOne({gstn:gstn}).then(user=>{
         if(!user){
             req.flash('error_msg','No user registered with this email');
             res.redirect('/reset');
