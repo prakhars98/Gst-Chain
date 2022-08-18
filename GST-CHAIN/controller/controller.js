@@ -94,7 +94,7 @@ router.post('/reset', (req,res)=>{
             });
             let mailOptions = {
                 from:'gstchain.abes@gmail.com',
-                to:email,
+                to:user.email,
                 subject:"GST-CHAIN:- Password reset link",
                 html:'<a href="http://localhost:3000/resetpass/' + payload.id +'/'+ token + '">Click here to reset your password </a>'
 
