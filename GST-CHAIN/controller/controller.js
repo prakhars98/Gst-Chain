@@ -89,7 +89,7 @@ router.post('/reset', (req,res)=>{
                 service:'gmail',
                 auth:{
                     user:'gstchain.abes@gmail.com',
-                    pass:'gst@1234'
+                    pass:'cidunhnslgpqufae'
                 }
             });
             let mailOptions = {
